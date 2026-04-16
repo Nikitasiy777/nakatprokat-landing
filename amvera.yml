@@ -6,6 +6,6 @@ build:
   additionalCommands: npm ci && npm run build
 
 run:
-  scriptName: start
+  command: npm start
   persistenceMount: /data
   containerPort: 3000
