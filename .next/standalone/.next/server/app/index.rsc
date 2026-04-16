@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+2:I[7555,[],""]
+3:I[1295,[],""]
+4:I[8720,["958","static/chunks/958-1971dbf62bea4dd1.js","177","static/chunks/app/layout-9361a6ca578d71cb.js"],"default"]
+5:I[7864,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+6:I[5728,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+7:I[8483,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+8:I[1995,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+9:I[7734,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+a:I[1832,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+b:I[9938,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+c:I[8439,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+d:I[5922,["958","static/chunks/958-1971dbf62bea4dd1.js","254","static/chunks/254-ea75703cc9766d4c.js","974","static/chunks/app/page-5e4c810c03b564d6.js"],"default"]
+e:I[9665,[],"MetadataBoundary"]
+10:I[9665,[],"OutletBoundary"]
+13:I[4911,[],"AsyncMetadataOutlet"]
+15:I[9665,[],"ViewportBoundary"]
+17:I[6614,[],""]
+:HL["/_next/static/media/21350d82a1f187e9-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/70f4729470d61a2c.css","style"]
+0:{"P":null,"b":"pVmvwlO9A4nuHOC25LgDT","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/70f4729470d61a2c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ru","className":"__variable_69aa20","children":["$","body",null,{"className":"font-inter","children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}]]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[[["$","$L5",null,{}],["$","main",null,{"children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}]]}],["$","$Ld",null,{}]],["$","$Le",null,{"children":"$Lf"}],null,["$","$L10",null,{"children":["$L11","$L12",["$","$L13",null,{"promise":"$@14"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","O0RKQjlhm4UCkhl7wYvNP",{"children":[["$","$L15",null,{"children":"$L16"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$17","$undefined"],"s":false,"S":true}
+18:"$Sreact.suspense"
+19:I[4911,[],"AsyncMetadata"]
+f:["$","$18",null,{"fallback":null,"children":["$","$L19",null,{"promise":"$@1a"}]}]
+12:null
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1a:{"metadata":[["$","title","0",{"children":"Накат Прокат — Работа курьером в Казани"}],["$","meta","1",{"name":"description","content":"Стань курьером в Казани. Яндекс, Купер, Самокат, Вкусвилл и другие сервисы. Зарабатывай до 4 000 ₽ в день. Велосипед бесплатно на первую неделю."}],["$","meta","2",{"name":"keywords","content":"курьер Казань, работа курьером, Яндекс курьер, Купер курьер, Самокат курьер, Вкусвилл курьер, велокурьер"}],["$","meta","3",{"property":"og:title","content":"Накат Прокат — Работа курьером в Казани"}],["$","meta","4",{"property":"og:description","content":"До 4 000 ₽ в день. Велосипед бесплатно на первую неделю. Яндекс, Купер, Самокат, Вкусвилл."}],["$","meta","5",{"property":"og:locale","content":"ru_RU"}],["$","meta","6",{"property":"og:type","content":"website"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Накат Прокат — Работа курьером в Казани"}],["$","meta","9",{"name":"twitter:description","content":"До 4 000 ₽ в день. Велосипед бесплатно на первую неделю. Яндекс, Купер, Самокат, Вкусвилл."}]],"error":null,"digest":"$undefined"}
+14:{"metadata":"$1a:metadata","error":null,"digest":"$undefined"}

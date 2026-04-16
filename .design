@@ -1,0 +1,158 @@
+# .design — Дизайн-система проекта
+
+> Читай этот файл перед любой работой над фронтендом.
+
+---
+
+## Компания
+
+**Накат Прокат** — рекрутинговый партнёр Яндекс Маркета и Самоката в Казани.
+Главное УТП: **стань курьером и получи электровелосипед бесплатно на первую неделю.**
+
+---
+
+## Цвета
+
+| Переменная       | Hex       | Назначение                        |
+|-----------------|-----------|-----------------------------------|
+| `--cream`       | `#F8F6F0` | Фон страницы                      |
+| `--cream-dark`  | `#EEECEA` | Фон альтернативных секций         |
+| `--lime`        | `#BFE65F` | Кнопки, бейджи, акценты           |
+| `--lime-dark`   | `#9FCC3A` | Hover кнопок, тёмный акцент       |
+| `--lime-bg`     | `#EDF8C4` | Очень светлый лайм (фон карточки) |
+| `--dark`        | `#2C2C2C` | Основной тёмный текст             |
+| `--dark-header` | `#1C1B18` | Хедер и футер                     |
+| `--white`       | `#ffffff` | Фон карточек                      |
+| `--text-sub`    | `#6B6860` | Второстепенный текст              |
+| `--border`      | `#DDD9CE` | Бордеры карточек и разделители    |
+
+```css
+:root {
+  --cream:       #F8F6F0;
+  --cream-dark:  #EEECEA;
+  --lime:        #BFE65F;
+  --lime-dark:   #9FCC3A;
+  --lime-bg:     #EDF8C4;
+  --dark:        #2C2C2C;
+  --dark-header: #1C1B18;
+  --white:       #ffffff;
+  --text-sub:    #6B6860;
+  --border:      #DDD9CE;
+}
+```
+
+---
+
+## Шрифты
+
+| Шрифт  | Применение                                  | Подключение        |
+|--------|---------------------------------------------|--------------------|
+| Inter  | Весь текст: заголовки (900), тело (400–600) | `next/font/google` |
+
+```css
+/* Заголовки: Inter Black */
+.heading { font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; }
+/* Тело */
+body { font-family: 'Inter', system-ui, sans-serif; }
+```
+
+---
+
+## Референс дизайна
+
+Сайт-референс: **nakatprokat.ru**
+Структура страницы:
+- Тёмный хедер (`--dark-header`) с логотипом НКП в `--lime`
+- Кремовый фон (`--cream`) для основных секций
+- Альтернативные секции на `--cream-dark`
+- Белые карточки с `--border` бордером
+- Тёмный футер (`--dark-header`)
+
+---
+
+## Стек
+
+```
+Next.js 15 + App Router
+Tailwind CSS
+TypeScript
+Framer Motion  — анимации
+Lucide React   — иконки
+Inter          — шрифт текста
+Bebas Neue     — шрифт заголовков
+```
+
+---
+
+## Компоненты и паттерны
+
+### Кнопка — основная
+```html
+<button style="background: var(--lime); color: var(--dark); font-family: 'Bebas Neue'">
+  ТЕКСТ КНОПКИ
+</button>
+```
+
+### Кнопка — инверсная
+```html
+<button style="background: var(--dark); color: var(--lime); font-family: 'Bebas Neue'">
+  ТЕКСТ КНОПКИ
+</button>
+```
+
+### Карточка
+```html
+<div style="background: var(--white); border: 1px solid var(--border); border-radius: 16px">
+  ...
+</div>
+```
+
+### Бейдж
+```html
+<span style="background: var(--lime); color: var(--dark); border-radius: 99px; padding: 4px 12px; font-size: 12px; font-weight: 600">
+  Бейдж
+</span>
+```
+
+### Заголовок hero
+```css
+font-family: 'Bebas Neue';
+font-size: clamp(52px, 9vw, 112px);
+color: var(--dark);
+line-height: 1;
+```
+
+### Заголовок секции
+```css
+font-family: 'Bebas Neue';
+font-size: clamp(40px, 6vw, 72px);
+color: var(--dark);
+```
+
+---
+
+## Адаптив — обязательно mobile-first
+
+```
+Мобильный (по умолчанию): 1 колонка, px-5
+sm: 640px+
+md: 768px+ — 2 колонки
+lg: 1024px+ — 3 колонки, показывать карту
+max-width контента: 1152px (max-w-6xl)
+```
+
+**Правило:** сначала пишем мобильный вид, потом расширяем через `md:` и `lg:`.
+Карта офиса — только на `lg:` (hidden на мобильном).
+
+---
+
+## Структура секций лендинга
+
+1. `<Header>` — тёмный, логотип НКП, навигация, телефон, кнопка
+2. `<HeroSection>` — хлебные крошки + Bebas заголовок + УТП-плашка
+3. `<VacancyCards>` — 3 карточки вакансий (велокурьер, пеший, сборщик)
+4. `<InfoStrip>` — тёмная полоса с 4 ключевыми фактами
+5. `<HowItWorksSection>` — 4 шага оформления
+6. `<FormSection>` — форма заявки + карта офиса (lg:)
+7. `<FAQSection>` — аккордеон с вопросами
+8. `<Footer>` — тёмный, контакты, копирайт
