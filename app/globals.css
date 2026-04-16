@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --font-inter: 'Inter', sans-serif;
   --bg-primary:    #F8F6F0;
   --bg-secondary:  #EEECEA;
   --bg-card:       #FFFFFF;
