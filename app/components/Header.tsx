@@ -56,13 +56,35 @@ function MenuToggle({ open, onClick }: { open: boolean; onClick: () => void }) {
 
 export default function Header() {
   const [open, setOpen]         = useState(false);
-  const [active, setActive]     = useState(0);
+  const [active, setActive]     = useState(-1);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 12);
     window.addEventListener("scroll", fn);
     return () => window.removeEventListener("scroll", fn);
+  }, []);
+
+  /* Scroll spy — подсвечиваем пункт меню при скролле к секции */
+  useEffect(() => {
+    const sectionIds = nav.map((item) => item.href.replace("#", ""));
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const trigger = window.innerHeight * 0.45;
+      let found = -1;
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sectionIds[i]);
+        if (!el) continue;
+        const top = el.getBoundingClientRect().top + scrollY;
+        if (scrollY + trigger >= top) { found = i; break; }
+      }
+      setActive(found);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   /* Блокируем скролл body пока Sheet открыт */
