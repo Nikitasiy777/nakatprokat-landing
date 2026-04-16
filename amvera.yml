@@ -1,0 +1,11 @@
+meta:
+  environment: nodejs
+  toolVersion: "20"
+
+build:
+  additionalCommands: npm ci && npm run build
+
+run:
+  scriptName: start
+  persistenceMount: /data
+  containerPort: 3000
